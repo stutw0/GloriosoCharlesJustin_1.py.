@@ -1,0 +1,29 @@
+#solution on problem 1
+
+#solution on problem 2
+
+number = int(input("Enter a number: "))
+sum_of_cubes = 0
+
+for i in range(1, number):
+    cube = i ** 3
+    sum_of_cubes += cube
+print(f"The sum of all cubes is {sum_of_cubes}.")
+
+#solution on problem 3
+
+#solution on problem 4
+
+#solution on problem 5
+BlocksNum = int(input("Enter a number: "))
+CurrentMaxBlocks = 1 
+Layers = 0 
+
+while (BlocksNum >= CurrentMaxBlocks):
+  Layers += 1
+  BlocksNum -= 
+CurrentMaxBlocks 
+  CurrentMaxBlocks += 1 
+
+print("The height of the pyramid is:", Layers)
+
