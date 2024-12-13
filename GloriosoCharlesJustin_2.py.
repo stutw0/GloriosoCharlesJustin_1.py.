@@ -1,4 +1,11 @@
 #solution on problem 1
+char = input("Enter a character: ")
+num = int(input("Enter a number: "))
+
+for i in range(1, num + 1):
+    print(char * i)
+for i in range(num-1, 0, -1):
+    print(char * i)
 
 #solution on problem 2
 
@@ -11,8 +18,49 @@ for i in range(1, number):
 print(f"The sum of all cubes is {sum_of_cubes}.")
 
 #solution on problem 3
+def print_triangle(max_num):
+    num = 1
+    row_len = 1
+
+    while num <= max_num:
+        row_str = ""
+        for i in range(row_len):
+            row_str += str(num)
+            num += 1
+            if num > max_num:
+                break
+        print(row_str)
+        row_len += 1
+
+if _name_ == "_main_":
+    max_num = int(input("Enter a number: "))
+    print_triangle(max_num)
 
 #solution on problem 4
+def main():
+    odd_sum = 0
+    odd_count = 0
+
+    while True:
+        number = int(input("Enter a number (0 to exit): "))
+        if number == 0:
+            break
+
+        if number % 2 != 0:
+            odd_sum += number
+            odd_count += 1
+    if odd_count == 0:
+        print("Exception has occurred: ZeroDivisionError")
+    else:
+        odd_avg = odd_sum / odd_count
+        odd_sqrt = (odd_sum ** 0.5).__round__(2)
+
+        print(f"The sum of all odd numbers is {odd_sum}.")
+        print(f"The average of all odd numbers is {odd_avg:.1f}.")
+        print(f"The square root of the sum of all odd numbers is {odd_sqrt}.")
+
+if _name_ == "_main_":
+    main()
 
 #solution on problem 5
 BlocksNum = int(input("Enter a number: "))
