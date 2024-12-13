@@ -1,0 +1,24 @@
+#solution on problem 1
+a, b = map(int, input().split())
+print(a * b)
+
+#solution on problem 2
+height = int(input("Input height: ")) 
+print("+" + "="10 +"+\n" + ("+" + " "*10 + "+\n") (height - 2) + "+" + "="*10 +"+\n" )
+
+#solution on problem 3
+num1, num2 = map(int, input("Enter two numbers separated by a space: ").split()) 
+print(f"The sum of all three numbers are {num1 * num2 + num2 * 6}")
+
+#solution on problem 4
+num1, num2 = int(input("Enter an integer: ")), float(input("Enter a float: ")) 
+
+#string modulo operator 
+print("First Number: %.2f, Second Number: %d" % (num1, int(num2)))
+
+#f-strings print
+(f"First Number: {num1:.2f}, Second Number: {int(num2)}")
+
+#solution on problem 5
+separator = input("Input separator character/s: ") 
+ending = input("Input ending character/s: ") print("I", separator * 2, "love", separator * 2, "Python", ending)
